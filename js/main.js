@@ -156,10 +156,7 @@ function validateSignUpInputs() {
         setError(passwordInput, "This field is required.");
         isValid.isValidPassword = false;
     } else if(!validatePassword()) {
-        setError(passwordInput, "Password must contain at least one uppercase letter.");
-        isValid.isValidPassword = false;
-    } else if(password.length < 6) {
-        setError(passwordInput, "Password must be at least 6 characters long");
+        setError(passwordInput, "Password must be 6+ characters with at least 1 uppercase letter.");
         isValid.isValidPassword = false;
     } else {
         setError(passwordInput, "");
