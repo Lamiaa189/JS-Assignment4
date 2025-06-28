@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+#loginSection {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../images/bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  animation: addFilter 5s linear infinite;
+}
+
+@keyframes addFilter {
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  min-width: 400px;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 20px;
+  padding: 40px 0;
+  border: 2px solid rgb(255, 255, 255, 0.5);
+  backdrop-filter: blur(15px); 
+}
+
+h2 {
+  text-align: center;
+  font-size: 2em;
+}
+
+.input-box {
+  width: 310px;
+  position: relative;
+  margin-top: 30px;
+  border-bottom: 2px solid #fff;
+}
+
+.input-box input {
+  width: 100%;
+  height: 50px;
+  padding: 0 35px 0 5px;
+  background-color: transparent !important;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  color: #fff;
+}
+
+.input-box label {
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1em;
+  transition: 0.3s;
+}
+
+.input-box .icon {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.input-box input:focus~label, .input-box input.filled~label {
+  top: -5px;
+}
+
+#loginSection .btn {
+  width: 100%;
+  font-weight: 500;
+}
+
+.sign-link {
+  font-size: 0.9em;
+}
+
+.sign-link a {
+  font-weight: 600;
+}
+
+@media (max-width: 360px) {
+  .login-box {
+    width: 100%;
+    height: 100vh;
+    border: none;
+  }
+
+  .input-box {
+    width: 260px;
+  }
+}
+
+.signup-display {
+  display: none;
+}
+
+.login-display {
+  display: block;
+}
+
+
+input:-webkit-autofill {
+  background-color: transparent !important;
+  -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+  -webkit-text-fill-color: #fff !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.invalid-feedback {
+  position: absolute;
+  left: 5px;
+  top: 100%;
+}
+
+#home .btn {
+  font-weight: 500;
+}
+
+
+
+
